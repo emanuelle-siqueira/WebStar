@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+    alert("Calculando médias...");
+
+    var nomeDisciplina = prompt("Digite o nome da Disciplina: ");
+    var av1 = +prompt("Digite o valor da primeira nota: ");
+    var av2 = +prompt("Digite o valor da segunda nota: ");
+    var av3 = +prompt("Digite o valor da terceira nota: ");
+
+    
+    if ((av1 >= 0 && av2 >= 0 && av3 >= 0) && (av1 <= 10 && av2 <= 10 && av3 <= 10)) {
+        var media = (av1+av2+av3)/3;
+        if (media >= 7) {
+            document.write("Sua nota em "+nomeDisciplina+ "foi de: "+media+"<br> Você foi Aprovado!!!");
+        }
+        else if (media < 7 && media >= 5){
+            document.write("Sua nota em "+nomeDisciplina+ "foi de: "+media+"<br> Você está de RECUPERAÇÃO...");
+        }
+        else {
+            document.write("Sua nota em "+nomeDisciplina+ " foi de: "+media+"<br> Você está REPROVADO, deverá repetir o semestre...");
+        }
+    } else {
+        document.write("Valor de notas inválidas");
+    }
+</script>

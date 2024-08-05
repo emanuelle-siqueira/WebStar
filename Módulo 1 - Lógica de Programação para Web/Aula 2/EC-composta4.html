@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+
+<script>
+    alert("Calculando a área de um círculo...")
+
+    var raio = +prompt("Insira o valor do raio: ");
+
+    
+    if (raio > 0){
+        var areaCirculo = Math.PI*(raio*raio);
+        document.write("O valor da área do círculo é de "+areaCirculo.toFixed(2)+"metros quadrados..");
+    } else {
+        document.write("Entrada inválida... o valor do raio deve ser positivo!")
+    }
+</script>

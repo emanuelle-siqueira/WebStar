@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+
+<script>
+    alert("Simulação de reserva financeira...")
+
+    var saldoJuntado = +prompt("Informe o saldo juntado para a viagem...:");
+
+    if(saldoJuntado >= 10000){
+        document.write("Parabéns!! Seu saldo foi de "+saldoJuntado+" <br> Sua viagem para Europa chegou.");
+    } else{
+        if (saldoJuntado >= 3000 && saldoJuntado < 10000){
+            document.write("Seu saldo foi de "+saldoJuntado+"<br> Viagem nacional... Escolha seu destino no Brasil!!!");
+        } else {
+            document.write("Seu saldo foi de "+saldoJuntado+"<br> Poxa... sem saldo para viajar, sem viagem...");
+        }
+    }
+</script>
